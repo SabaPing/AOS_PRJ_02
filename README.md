@@ -1,8 +1,4 @@
 # AOS_PRJ_02
-This is the 2nd project from course Advanced Operating System, Fall 2015.
-
-CS 6378: Advanced Operating Systems
-Programming Project 2
 
 You are required to work on this project alone. Sharing of code with fellow students, or using code from other sources without permission of the instructor and/or TA is strictly prohibited. You are expected to demonstrate the operation of your project to the instructor or the TA.
 
@@ -15,7 +11,7 @@ A peer-to-peer (P2P) system, for the purpose of this assignment, consists of a s
 ## File Sharing Procedure 
 For your assigment you have to implement the following simple search approach:
 ### Simple Search Approach:
-	If computer Ck is looking for a file, it can issue the search request using either a file name or a keyword, and a hop-count which is initially set to 1.
+If computer Ck is looking for a file, it can issue the search request using either a file name or a keyword, and a hop-count which is initially set to 1.
 	1. The search request is flooded into the overlay network (along the links represented by the list of neighbors) to other computers that are no more than hop-count away from the computer issuing the search request. Having initiated the search request, Ck starts a timer which is set to expire after
 thop count seconds.
 	2. You must ensure that a computer forwards a search request issued by another computer at most once, i:e:, your implementation should be able to detect duplicate requests.
